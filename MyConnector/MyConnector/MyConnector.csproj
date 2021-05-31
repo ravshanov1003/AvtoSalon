@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2E70082-56ED-4BD4-B424-06D9B7D0DC37}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MyConnector</RootNamespace>
+    <AssemblyName>MyConnector</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=8.0.21.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avtomobillar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avtomobillar.Designer.cs">
+      <DependentUpon>Avtomobillar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mijoz2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mijoz2.Designer.cs">
+      <DependentUpon>mijoz2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mijozlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mijozlar.Designer.cs">
+      <DependentUpon>Mijozlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newCars.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newCars.Designer.cs">
+      <DependentUpon>newCars.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newWindow.Designer.cs">
+      <DependentUpon>newWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchCar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchCar.Designer.cs">
+      <DependentUpon>searchCar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchCar2cs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchCar2cs.Designer.cs">
+      <DependentUpon>searchCar2cs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchCar3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchCar3.Designer.cs">
+      <DependentUpon>searchCar3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="searchCar4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="searchCar4.Designer.cs">
+      <DependentUpon>searchCar4.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Avtomobillar.resx">
+      <DependentUpon>Avtomobillar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mijoz2.resx">
+      <DependentUpon>mijoz2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mijozlar.resx">
+      <DependentUpon>Mijozlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newCars.resx">
+      <DependentUpon>newCars.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="searchCar.resx">
+      <DependentUpon>searchCar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchCar2cs.resx">
+      <DependentUpon>searchCar2cs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchCar3.resx">
+      <DependentUpon>searchCar3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="searchCar4.resx">
+      <DependentUpon>searchCar4.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tahoe.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images\equinox.jpg" />
+    <Content Include="images\gentra.jpg" />
+    <Content Include="images\lock.png" />
+    <Content Include="images\user.png" />
+    <None Include="Resources\malibu2.jpg" />
+    <None Include="Resources\traiblazer.jpg" />
+    <None Include="Resources\tahoe2.png" />
+    <None Include="Resources\captiva.jpg" />
+    <None Include="Resources\gentra.jpg" />
+    <None Include="Resources\equinox.jpg" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyConnector", "MyConnector\MyConnector.csproj", "{B2E70082-56ED-4BD4-B424-06D9B7D0DC37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D873226F-4FAA-43CF-B725-18BB3908EE52}"
+	ProjectSection(SolutionItems) = preProject
+		C:\Users\Asus\Pictures\tahoe.jpg = C:\Users\Asus\Pictures\tahoe.jpg
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2E70082-56ED-4BD4-B424-06D9B7D0DC37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2E70082-56ED-4BD4-B424-06D9B7D0DC37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2E70082-56ED-4BD4-B424-06D9B7D0DC37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2E70082-56ED-4BD4-B424-06D9B7D0DC37}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {389E96A9-32F5-4AF6-9162-3801C3DD1896}
+	EndGlobalSection
+EndGlobal
